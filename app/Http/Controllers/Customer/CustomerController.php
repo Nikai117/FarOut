@@ -26,4 +26,11 @@ class CustomerController
         );
 
     }
+
+    public function show(Customer $customer)
+    {
+        return new JsonResource(
+            $customer
+        );
+    }
 }
