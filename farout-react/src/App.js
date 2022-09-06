@@ -15,7 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Customers />} />
-            <Route index element={<Customerform />} />
+            <Route path="customerform" element={<Customerform />} />
           </Route>
         </Routes>
        </BrowserRouter>

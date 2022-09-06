@@ -8,6 +8,10 @@ const Layout = () => {
           <li>
             <Link to="/customers">Hallo</Link>
           </li>
+          
+          <li>
+            <Link to="/form">customerform</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
