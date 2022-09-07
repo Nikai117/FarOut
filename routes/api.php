@@ -11,4 +11,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register', [CustomerController::class, 'register']);
 Route::resource('/customer/{customer}/reservations', ReservationController::class)->only(['index']);
-Route::resource('/customer', CustomerController::class)->only(['show']);
+Route::resource('/customer', CustomerController::class)->only(['show', 'index']);

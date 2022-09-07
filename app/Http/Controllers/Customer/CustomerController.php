@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers\Customer;
 
+use App\Http\Resources\Customer\CustomerResource;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CustomerController
 {
+    public function index()
+    {
+        return new CustomerResource(
+          Customer::all()
+        );
+    }
     public function register(Request $request){
 
         $customer = Customer::create([
