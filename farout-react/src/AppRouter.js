@@ -9,8 +9,8 @@ import Customerform from "./Pages/CustomerForm";
         <header className="App-header">
           <BrowserRouter>
           <Routes>
-              <Route path ="customers" element={<Customers />} />
-              <Route path="contactform" element={<Customerform />} />
+              <Route path ="/customers" element={<Customers />} />
+              <Route path="/contactform" element={<Customerform />} />
           </Routes>
          </BrowserRouter>
         </header>

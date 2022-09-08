@@ -1,8 +1,9 @@
 {
-    "data": {
+    "data": [
+        {
         "id": 122,
-        "first_name": "Sara",
-        "last_name": "Rodríquez",
+        "firstname": "Sara",
+        "lastname": "Rodríquez",
         "created_at": "2022-08-31T12:29:23.000000Z",
         "updated_at": null,
         "reservations": [
@@ -128,5 +129,6 @@
                 "updated_at": null
             }
         ]
-    }
+        }
+    ]
 }

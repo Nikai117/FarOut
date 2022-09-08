@@ -1,7 +1,5 @@
 import './App.css';
-
 import AppRouter from './AppRouter';
-import ReactDOM from 'react-dom/client';
 
 export default function App() {
   return (
@@ -30,5 +28,3 @@ export default function App() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
