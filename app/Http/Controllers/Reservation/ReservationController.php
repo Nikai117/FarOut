@@ -13,8 +13,8 @@ class ReservationController extends Reservation
 {
     public function index(Customer $customer, Reservation $reservation)
     {
-        return new ReservationResource(
-          $customer->reservations()
+        return new JsonResource(
+          $customer->reservations
         );
     }
 }
