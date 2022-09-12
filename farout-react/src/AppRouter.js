@@ -7,7 +7,6 @@ import Home from "./Pages/Home";
   export default function AppRouter() {
     return (
       <div className="App">
-        <header className="App-header">
           <BrowserRouter>
           <Routes>
               <Route path ="/" element={<Home />} />
@@ -15,7 +14,6 @@ import Home from "./Pages/Home";
               <Route path="/allcustomers" element={<AllCustomers />} />
           </Routes>
          </BrowserRouter>
-        </header>
       </div>
     );
   }
