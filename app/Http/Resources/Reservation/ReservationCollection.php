@@ -16,7 +16,7 @@ class ReservationCollection extends ResourceCollection
     public function toArray($request)
     {
         return [
-            'reservation' => Reservation::collection($this->reservations)
+            'reservations' => ReservationResource::collection($this->resource)
         ];
     }
 }
