@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Reservation;
 
-use App\Http\Controllers\Controller;
 use App\Http\Resources\Reservation\ReservationResource;
 use App\Models\Customer;
 use App\Models\Reservation;
