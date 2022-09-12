@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Customer;
 
+use App\Http\Requests\CreateCustomerRequest;
 use App\Http\Resources\Customer\CustomerResource;
 use App\Models\Customer;
 use Illuminate\Http\Request;
@@ -11,11 +12,11 @@ class CustomerController
 {
     public function index()
     {
-        return new CustomerResource(
+        return new JsonResource(
           Customer::all()
         );
     }
-    public function register(Request $request){
+    public function register(CreateCustomerRequest $request){
 
         $customer = Customer::create([
             'first_name' => $request->input('first_name'),
@@ -28,7 +29,7 @@ class CustomerController
             'phone' => $request->input('phone'),
         ]);
 
-        return new JsonResource(
+        return new CustomerResource(
             $customer
         );
 
@@ -36,7 +37,7 @@ class CustomerController
 
     public function show(Customer $customer)
     {
-        return new JsonResource(
+        return new CustomerResource(
             $customer
         );
     }
