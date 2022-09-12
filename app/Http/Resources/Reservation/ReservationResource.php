@@ -19,7 +19,7 @@ class ReservationResource extends JsonResource
     {
         /** @var Reservation $this */
         return [
-          'customer_id' => $this->customer_id,
+            'customer_id' => $this->customer_id,
             'trip_id' => $this->reservation_date,
             'number_of_adults' => $this->number_of_children,
             'paid' => $this->paid
