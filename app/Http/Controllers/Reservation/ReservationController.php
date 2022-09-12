@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Reservation;
 
 use App\Http\Resources\Reservation\ReservationResource;
+use App\Http\Resources\Reservation\ReservationCollection;
 use App\Models\Customer;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class ReservationController extends Reservation
 {
     public function index(Customer $customer, Reservation $reservation)
     {
-        return new JsonResource(
+        return new ReservationCollection(
           $customer->reservations
         );
     }

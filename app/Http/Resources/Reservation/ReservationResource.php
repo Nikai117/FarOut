@@ -21,7 +21,8 @@ class ReservationResource extends JsonResource
         return [
             'customer_id' => $this->customer_id,
             'trip_id' => $this->reservation_date,
-            'number_of_adults' => $this->number_of_children,
+            'number_of_children' => $this->number_of_children,
+            'number_of_adults' => $this->number_of_adults,
             'paid' => $this->paid
         ];
     }
