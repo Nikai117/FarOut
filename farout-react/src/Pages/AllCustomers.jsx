@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    CustomerCard,
-    TitleCard 
 
-    } from "./css/AllCostumerElements";
-    
 class AllCustomers extends React.Component {
    
     constructor(props) {
@@ -36,26 +31,27 @@ class AllCustomers extends React.Component {
             <>
         <div className = "AllCustomers">
             <h1> All customers of FarOut </h1>
+            <table className="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">email</th>
+                    </tr>   
+                </thead>
               {
-                items.data.map((item) => ( 
-                <ol key = { item.id } >
-                    <CustomerCard>
-                        <TitleCard>
-                            FarOut Customer
-                        </TitleCard>
-                    <div>
-                    Name: { item.first_name }
-                    </div>
-                    <div>
-                    Full Name: { item.last_name }
-                    </div>
-                    <div>
-                    User Email: { item.email } 
-                    </div>
-                    </CustomerCard>
-                    </ol>
+                items.data.map((item) => (
+                <tbody>
+                    <tr>
+                    <td>{ item.first_name }</td>
+                    <td> { item.last_name }</td>
+                    <td> { item.email } </td>
+                    </tr>
+                </tbody>
                 ))
-            }
+
+               }
+            </table>
         </div>
         </>
     );
