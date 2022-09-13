@@ -23,7 +23,6 @@ class Customer extends Model
       'city',
       'country_code',
       'phone',
-
     ];
 
     public function reservations(): HasMany
