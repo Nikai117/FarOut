@@ -1,5 +1,6 @@
 import './App.css';
 import AppRouter from './AppRouter';
+
 //import Footer from '../src/components/MainSection/index';
 
 
@@ -12,7 +13,7 @@ export default function App() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ">
           <li className="nav-item active">
           <a className="nav-link" href="/">Home</a>
           </li>
@@ -23,14 +24,14 @@ export default function App() {
           <a className="nav-link" href="http://localhost:3000/customerform">Customerform</a>
           </li>
         </ul>
-        <ul className='navbar-nav me-auto'>
-        <li className="nav-item ">
+        <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
             <a className='nav-link' href="http://localhost:3000/login">Login</a>
         </li>
         </ul>
       </div>
     </nav>
-    <AppRouter /> 
+    <AppRouter />
     </div>
   );
 }
