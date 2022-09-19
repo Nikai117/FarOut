@@ -29,9 +29,9 @@ class AllCustomers extends React.Component {
    
         return (
             <>
-        <div className = "AllCustomers">
+        <div className = "AllCustomers p-5">
             <h1> All customers of FarOut </h1>
-            <table className="table table-hover">
+            <table className="table table-hover table-bordered">
                 <thead>
                     <tr>
                     <th scope="col">First</th>

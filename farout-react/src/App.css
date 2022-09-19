@@ -19,9 +19,8 @@ main{
   white-space: nowrap;
   background-image: url("./stock/nature.jpg");
   width: 270px;
-  background-size: 500px;
+  background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 

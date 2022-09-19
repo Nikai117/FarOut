@@ -1,15 +1,14 @@
 import './App.css';
 import AppRouter from './AppRouter';
-
 //import Footer from '../src/components/MainSection/index';
 
 
 export default function App() {
   return (
     <div className="App">
-    <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
       <a className="navbar-brand" href="/">Farout</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -32,6 +31,14 @@ export default function App() {
       </div>
     </nav>
     <AppRouter />
+    <div id="footer">    
+    <footer className="bg-dark text-center text-lg-start">
+      <div className="text-center p-3">
+        <a className="text-light" href="/">Farout</a>
+      </div>
+    </footer>
     </div>
+    </div>
+
   );
 }
