@@ -37,6 +37,7 @@ import styled from 'styled-components'
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+    background-size: cover;
     `
 
     export const MainContent = styled.div`

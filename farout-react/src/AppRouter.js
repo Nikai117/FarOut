@@ -7,7 +7,9 @@ import Customer from "./Pages/Customer";
 
   export default function AppRouter() {
     return (
-      <div className="AppMain">
+      <main>
+        <aside id="asideleft" className="open" ></aside>
+      <div className="AppMain overflow-auto vw-100">
       <BrowserRouter>
       <Routes>
           <Route path ="/" element={<Home />} />
@@ -17,7 +19,6 @@ import Customer from "./Pages/Customer";
       </Routes>
      </BrowserRouter>
       </div>
+      </main>
     );
-
   }
-

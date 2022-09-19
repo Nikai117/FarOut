@@ -6,13 +6,13 @@ import AppRouter from './AppRouter';
 export default function App() {
   return (
     <div className="App">
-    <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark">
       <a className="navbar-brand" href="/">Farout</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ">
           <li className="nav-item active">
           <a className="nav-link" href="/">Home</a>
           </li>
@@ -23,14 +23,22 @@ export default function App() {
           <a className="nav-link" href="http://localhost:3000/customerform">Customerform</a>
           </li>
         </ul>
-        <ul className='navbar-nav me-auto'>
-        <li className="nav-item ">
+        <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
             <a className='nav-link' href="http://localhost:3000/login">Login</a>
         </li>
         </ul>
       </div>
     </nav>
-    <AppRouter /> 
+    <AppRouter />
+    <div id="footer">    
+    <footer className="bg-dark text-center text-lg-start">
+      <div className="text-center p-3">
+        <a className="text-light" href="/">Farout</a>
+      </div>
+    </footer>
     </div>
+    </div>
+
   );
 }

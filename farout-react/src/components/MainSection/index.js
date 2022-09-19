@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Video from '../../Videos/planet.mp4';
+import Video from '../../stock/planet.mp4';
 import { MainContainer, MainBg, VideoBg, MainContent, MainH1} from './MainSectionElements';
 
 const MainSection = () => {
