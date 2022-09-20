@@ -2,8 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Customerform from "./Pages/CustomerForm";
 import AllCustomers from "./Pages/AllCustomers";
 import Home from "./Pages/Home";
-import Login from "./Pages/Login";
-import "./App.css";
+import Customer from "./Pages/Customer";
 
 
   export default function AppRouter() {
@@ -16,7 +15,7 @@ import "./App.css";
           <Route path ="/" element={<Home />} />
           <Route path="/allcustomers" element={<AllCustomers />} />
           <Route path="/CustomerForm" element={<Customerform />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/Customer/${id}" element={<Customer />} />
       </Routes>
      </BrowserRouter>
       </div>
