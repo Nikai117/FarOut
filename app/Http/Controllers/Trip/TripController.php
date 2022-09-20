@@ -2,17 +2,26 @@
 
 namespace App\Http\Controllers\Trip;
 
+use App\Http\Resources\Trip\TripResource;
 use App\Models\City;
 use App\Models\Trip;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class TripController
+class TripController 
 {
-    public function index(City $city, Trip $trip)
+    public function index()
     {
+        
         return new JsonResource(
-          $city->trips
+            Trip::all()
+        );
+    }
+
+    public function show(Trip $trip)
+    {
+        return new TripResource(
+            $trip
         );
     }
 }
