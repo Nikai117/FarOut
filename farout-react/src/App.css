@@ -2,19 +2,19 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  height:100vh;
+  height: 100vh;
 
 }
 
-main{
+main {
   background-color: rgba(255, 255, 255, 0.9);
   overflow: auto;
-  flex:1;
-  display:flex;
-  }
+  flex: 1;
+  display: flex;
+}
 
 
-#asideleft{
+#asideleft {
   overflow: hidden;
   white-space: nowrap;
   background-image: url("./stock/nature.jpg");
@@ -22,7 +22,6 @@ main{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -48,6 +47,7 @@ main{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
