@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Customer;
 
 use App\Http\Requests\CreateCustomerRequest;
 use App\Http\Resources\Customer\CustomerResource;
+use App\Http\Resources\Customer\FullCustomerResource;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
@@ -37,7 +38,7 @@ class CustomerController
 
     public function show(Customer $customer)
     {
-        return new CustomerResource(
+        return new FullCustomerResource(
             $customer
         );
     }
