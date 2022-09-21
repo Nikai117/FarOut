@@ -1,6 +1,5 @@
 import React from "react";
 import Customer from "./Customer";
-import fetchdataById from "../lib/api/GetCustomer";
 
 class AllCustomers extends React.Component {
    
@@ -48,13 +47,13 @@ class AllCustomers extends React.Component {
                     <td>{ item.first_name }</td>
                     <td> { item.last_name }</td>
                     <td> { item.email } </td>
-                    <td>
-                    <button onClick={() => fetchdataById(item.id)} href="http://localhost:3000/customer/${id}">
-                        Details
+                    <td>    
+                    <button onClick={() => Customer}>
+                    <a href={'/customer/'+  item.id }>Details</a> 
                     </button>
                     </td>
+
                     </tr>
-       
                 </tbody>
                 ))
 
