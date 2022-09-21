@@ -48,10 +48,13 @@ class AllCustomers extends React.Component {
                     <td>{ item.first_name }</td>
                     <td> { item.last_name }</td>
                     <td> { item.email } </td>
-                    </tr>
+                    <td>
                     <button onClick={() => fetchdataById(item.id)} href="http://localhost:3000/customer/${id}">
                         Details
                     </button>
+                    </td>
+                    </tr>
+       
                 </tbody>
                 ))
 

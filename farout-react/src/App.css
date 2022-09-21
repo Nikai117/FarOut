@@ -13,8 +13,16 @@ main {
   display: flex;
 }
 
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
 
-#asideleft {
+/* #asideleft {
   overflow: hidden;
   white-space: nowrap;
   background-image: url("./stock/nature.jpg");
@@ -22,7 +30,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+ */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
