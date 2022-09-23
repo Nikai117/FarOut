@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+/*import { render } from "@testing-library/react";
 import React, {useState, useEffect} from "react";
 
 class Customer extends  React.Component {
@@ -66,4 +66,4 @@ class Customer extends  React.Component {
     }
 }
 
-export default Customer;
+export default Customer;*/

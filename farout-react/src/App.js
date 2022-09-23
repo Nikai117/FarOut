@@ -37,6 +37,9 @@ export default function App() {
                 Customerform
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/allcities">cities</a>
+            </li>
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
