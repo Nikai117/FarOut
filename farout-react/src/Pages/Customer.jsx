@@ -1,69 +1,46 @@
-/*import { render } from "@testing-library/react";
+import axios from "axios";
 import React, {useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
 
-class Customer extends  React.Component {
+const client = axios.create({
+    baseURL: "http://127.0.0.1:8000/api/customer/" 
+  });
 
-    fetchdataById  = (id) => {
-        console.log(id);
-        fetch(`http://127.0.0.1:8000/api/customer/${id}`)
-        .then((res) => res.json())
-        .then((json) => {
-            console.log(json);
-            this.setState({
-                items: json,
-                DataisLoaded: true
-            });
-        })
-    }
+  const Customer = () => {
+	let {id} = useParams();
+        const [posts, setPosts] = useState([]);
 
-    render() {
-        fetchdataById  = (id) => {
-            console.log(id);
-            fetch(`http://127.0.0.1:8000/api/customer/${id}`)
-            .then((res) => res.json())
-            .then((json) => {
-                console.log(json);
-                this.setState({
-                    items: json,
-                    DataisLoaded: true
-                });
-            })
-        }
-        
-        return  (
-            <>
-                <h1> Customer of Farout</h1>
-                <table className="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Country</th>
-                                <th scope="col">City</th>
-                                <th scope="col">Postal Code</th>
-                                <th scope="col">phone</th>
-                            </tr>
-                        </thead>
-                        {
-                            items.data.map((item) => (
-                                <tbody>
-                                    <tr>
-                                        <td>{ item.first_name }</td>
-                                        <td>{ item.last_name }</td>
-                                        <td>{ item.email }</td>
-                                        <td>{ item.country }</td>
-                                        <td>{ item.city }</td>
-                                        <td>{ item.postal_code }</td>
-                                        <td>{ item.phone }</td>
-                                    </tr>
-                                </tbody>
-                            ))
-                        }
-                </table>
-            </>
-        )
-    }
-}
+	useEffect(() => {
+		const fetchPost = async () => {
+			try {
+				client.params = { "id": id } ;
+				let response = await client.get(id);
+				setPosts(response.data.data);
+                console.log(response.data);
+			} catch (error) {
+				console.log("testerror "+ error);
+			}
+		};
+		fetchPost();
+	}, []);
 
-export default Customer;*/
+
+	return (
+		<div className="Customer">
+			<div className="posts-container">
+				<h2>Farout profile 📫</h2>
+				<h3><div>{id}</div></h3>
+				{console.log(posts)}
+						<div className="post-card" key={posts.id}>
+							<h2 className="post-title">{posts.first_name}</h2>
+							<p className="post-body">{posts.email}</p>
+					
+						</div>
+				
+				</div>
+		</div>
+	);
+
+};
+
+export default Customer;

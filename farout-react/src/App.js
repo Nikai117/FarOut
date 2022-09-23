@@ -51,15 +51,6 @@ export default function App() {
         </div>
       </nav>
       <AppRouter />
-      <div id="footer">
-        <footer className="bg-dark text-center text-lg-start">
-          <div className="text-center p-3">
-            <a className="text-light" href="/">
-              Farout
-            </a>
-          </div>
-        </footer>
-      </div>
     </div>
   );
 }
