@@ -18,6 +18,7 @@ export default function AppRouter() {
             <Route path="/CustomerForm" element={<Customerform />} />
             <Route path="/customer/:id" element={<Customer />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/allcities" element={<Allcities />} />
           </Routes>
         </BrowserRouter>
         <footer

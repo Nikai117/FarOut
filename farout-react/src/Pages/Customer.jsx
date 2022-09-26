@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
-import { CustomerProfile, ProfilePicture } from "./css/CustomerElements";
+import { CustomerProfile, ProfilePicture, UserInfo, UserName } from "./css/CustomerElements";
 import image from "./Media/blankprofile.png";
 
 const client = axios.create({
@@ -32,16 +32,19 @@ const client = axios.create({
 			<div className="posts-container">
 				<h2>Farout profile 📫</h2>
 						<CustomerProfile>
+						<UserName>
+							<h2 className="post-title">{posts.first_name} {posts.last_name}</h2>
+						</UserName>
 						<div>
 							<ProfilePicture src={image} type="png"/>
-							<h2 className="post-title">{posts.first_name} {posts.last_name}</h2>
-							
+							<UserInfo>
 							<p className="post-body">{posts.email}</p>
 							<p className="post-body">{posts.address}</p>
 							<p className="post-body">{posts.postal_code}</p>
 							<p className="post-body">{posts.city}</p>
 							<p className="post-body">{posts.country_code}</p>
 							<p className="post-body">{posts.phone}</p>
+							</UserInfo>
 					
 						</div>
 						</CustomerProfile>

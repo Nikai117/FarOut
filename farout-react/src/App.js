@@ -29,16 +29,17 @@ export default function App() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://localhost:3000/allcustomers">
-                All Customers
+                Customers
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://localhost:3000/customerform">
-                Customerform
+                Customer-Register
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="http://localhost:3000/allcities">cities</a>
+              <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/allcities">
+              Cities</a>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">

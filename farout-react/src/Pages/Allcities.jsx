@@ -31,7 +31,7 @@ class Allcities extends React.Component {
         return (
             <>
         <div className = "Allcities p-5">
-            <h1> All customers of FarOut </h1>
+            <h1> Cities with Farout connections </h1>
             <table className="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -48,7 +48,7 @@ class Allcities extends React.Component {
                     <td> { item.description }</td>
                     
                     </tr>
-                 {/*    <button onClick={() => fetchdataById(item.id)} href="http://localhost:3000/customer/${id}">
+                 {/*    <button onClick={() => fetchdataById(item.id)} href="http://localhost:3000/city/${id}">
                         Details
                     </button> */}
                 </tbody>
