@@ -15,4 +15,11 @@ class TripController
           $city->trips
         );
     }
+
+    public function getAllTrips(Trip $trip)
+    {
+        return new JsonResource(
+          Trip::all()
+        );
+    }
 }
