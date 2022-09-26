@@ -17,5 +17,5 @@ Route::resource('/customer/{customer}/reservations', ReservationController::clas
 Route::resource('/customer', CustomerController::class)->only(['show', 'index']);
 Route::resource('/city', CityController::class)->only(['index']);
 Route::get('/city/{city}/trips', [CityController::class, 'getTrips']);
-Route::resource('/trips', TripController::class)->only(['show', 'index']);
+Route::resource('/trips', TripController::class)->only(['show', 'index', 'store']);
 Route::resource('/countries', CountryController::class)->only(['index']);
