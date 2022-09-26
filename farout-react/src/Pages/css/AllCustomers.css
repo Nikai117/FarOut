@@ -1,0 +1,14 @@
+.detailLink {
+    text-decoration: none;
+    color: black;
+}
+
+.detailLink:hover {
+    color: whitesmoke;
+    transition: ease-in-out;
+}
+
+.detailButton {
+    border-radius: 10px;
+    background: lightskyblue;
+}

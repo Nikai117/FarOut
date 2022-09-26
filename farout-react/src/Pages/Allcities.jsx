@@ -32,7 +32,7 @@ class Allcities extends React.Component {
         return (
             <>
         <div className = "Allcities p-5">
-            <h1> All customers of FarOut </h1>
+            <h1> Cities with Farout connections </h1>
             <table className="table table-hover table-bordered">
                 <thead>
                     <tr>

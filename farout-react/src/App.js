@@ -29,7 +29,7 @@ export default function App() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://localhost:3000/customerform">
-                Customerform
+                Customer-Register
               </a>
             </li>
             <li className="nav-item">

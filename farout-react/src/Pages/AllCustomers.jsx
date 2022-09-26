@@ -1,5 +1,6 @@
 import React from "react";
 import Customer from "./Customer";
+import "./css/AllCustomers.css";
 
 class AllCustomers extends React.Component {
    
@@ -48,8 +49,8 @@ class AllCustomers extends React.Component {
                     <td> { item.last_name }</td>
                     <td> { item.email } </td>
                     <td>    
-                    <button onClick={() => Customer}>
-                    <a href={'/customer/'+  item.id }>Details</a> 
+                    <button className="detailButton" onClick={() => Customer}>
+                    <a className="detailLink" href={'/customer/'+  item.id }>Details</a> 
                     </button>
                     </td>
 
