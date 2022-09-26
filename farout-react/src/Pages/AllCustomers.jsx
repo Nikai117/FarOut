@@ -49,7 +49,7 @@ class AllCustomers extends React.Component {
                     <td> { item.email } </td>
                     <td>    
                     <button onClick={() => Customer}>
-                    <a href={'/customer/'+  item.id }>Details</a> 
+                    <a className="detailLink" href={'/customer/'+  item.id }>Details</a> 
                     </button>
                     </td>
 
