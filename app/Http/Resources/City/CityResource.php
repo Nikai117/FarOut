@@ -1,14 +1,11 @@
 <?php
 
-declare(strict_types=1);
+namespace App\Http\Resources\City;
 
-namespace App\Http\Resources\Country;
-
-use App\Http\Resources\Reservation\CityResource;
-use App\Models\Country;
+use App\Models\City;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CountryResource extends JsonResource
+class CityResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -18,11 +15,9 @@ class CountryResource extends JsonResource
      */
     public function toArray($request)
     {
-        /**  @var Country $this */
         return [
-            'code' => $this->code,
+            'country_code' => $this->country_code,
             'description' => $this->description,
-            'cities' => CityResource::collection($this->city),
         ];
     }
 }
