@@ -1,9 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Customerform from "./Pages/CustomerForm";
+import Tripsform from "./Pages/TripsForm";
+
 import AllCustomers from "./Pages/AllCustomers";
 import Home from "./Pages/Home";
 import Customer from "./Pages/Customer";
+import CityTrips from "./Pages/CityTrips";
 import Allcities from "./Pages/Allcities";
+import AllTrips from "./Pages/Alltrips";
+
 import Login from "./Pages/Login";
 import "./App.css";
 export default function AppRouter() {
@@ -15,9 +20,13 @@ export default function AppRouter() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/allcustomers" element={<AllCustomers />} />
-            <Route path="/CustomerForm" element={<Customerform />} />
+            <Route path="/customerform" element={<Customerform />} />
+            <Route path="/tripsform" element={<Tripsform />} />
             <Route path="/customer/:id" element={<Customer />} />
+            <Route path="/city/:id/trips" element={<CityTrips />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/allcities" element={<Allcities />} />
+            <Route path="/alltrips" element={<AllTrips />} />
           </Routes>
         </BrowserRouter>
         <footer

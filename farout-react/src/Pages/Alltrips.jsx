@@ -1,8 +1,6 @@
 import React from "react";
-import CityTrips from "./CityTrips";
 
-
-class Allcities extends React.Component {
+class AllTrips extends React.Component {
    
     constructor(props) {
         super(props);
@@ -15,7 +13,7 @@ class Allcities extends React.Component {
    
     componentDidMount() {
         fetch(
-            "http://127.0.0.1:8000/api/city")
+            "http://127.0.0.1:8000/api/trips")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({
@@ -31,27 +29,23 @@ class Allcities extends React.Component {
    
         return (
             <>
-        <div className = "Allcities p-5">
-            <h1> All customers of FarOut </h1>
+        <div className = "AllTrips p-5">
+            <h1> All trips of FarOut </h1>
             <table className="table table-hover table-bordered">
                 <thead>
                     <tr>
-                    <th scope="col">Country code</th>
-                    <th scope="col">City</th>
-                    
+                    <th scope="col">Number of days</th>
+                    <th scope="col">Depature date</th>
+                    <th scope="col">price</th>
                     </tr>   
                 </thead>
               {
                 items.data.map((item) => (
                 <tbody>
                     <tr>
-                    <td> { item.country_code }</td>
-                    <td> { item.description }</td>
-                    <td>    
-                    <button onClick={() => CityTrips}>
-                    <a href={'/city/'+  item.id + '/trips/'}>Details</a> 
-                    </button>
-                    </td>
+                    <td>{ item.number_of_days }</td>
+                    <td> { item.departure_date }</td>
+                    <td> { item.price } </td>
                     </tr>
                 </tbody>
                 ))
@@ -64,4 +58,4 @@ class Allcities extends React.Component {
 }
 }
    
-export default Allcities;
+export default AllTrips;

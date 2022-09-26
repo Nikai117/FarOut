@@ -26,7 +26,8 @@ const client = axios.create({
 
 
 	return (
-		<div className="Customer">
+		
+		<div className="Customer vh-100 p-5">
 			<div className="posts-container">
 				<h2>Farout profile 📫</h2>
 				<h3><div>{id}</div></h3>
