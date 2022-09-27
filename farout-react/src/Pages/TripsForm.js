@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import axios from "axios";
 import CityList from "../components/MainSection/city-list.js";
 import "./css/form.css";
@@ -6,12 +6,12 @@ import "./css/form.css";
 function TripsForm() {
   const submitHandler = (event) => {
     event.preventDefault();
-    const city = event.target.city.value;
+    var city_select = event.target.city_select;
+    var city_option = city_select.options;
+    console.log(city_select.options[city_select.id]);
     const number_of_days = event.target.number_of_days.value;
     const departure_date = event.target.departure_date.value;
-
     const data = {
-      city,
       number_of_days,
       departure_date,
     };
@@ -37,9 +37,7 @@ function TripsForm() {
               alt="Sample photo"
             />
             <div className="card-body p-4 p-md-5">
-              <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">
-                Customer registration
-              </h3>
+              <h3 className="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Add trips</h3>
               <form
                 name="registration"
                 id="registrationform"
@@ -82,20 +80,18 @@ function TripsForm() {
                     aria-describedby="emailHelp"
                   />
                 </div>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <div className="form-outline">
-                      <label htmlFor="price" className="form-label d-flex">
-                        Price *
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="price"
-                        required
-                        id="price"
-                      />
-                    </div>
+                <div className="mb-3">
+                  <div className="form-outline">
+                    <label htmlFor="price" className="form-label d-flex">
+                      Price *
+                    </label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="price"
+                      required
+                      id="price"
+                    />
                   </div>
                 </div>
 
@@ -116,3 +112,4 @@ function TripsForm() {
 }
 
 export default TripsForm;
+ */

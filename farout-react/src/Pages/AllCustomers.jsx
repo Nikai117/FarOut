@@ -41,24 +41,23 @@ class AllCustomers extends React.Component {
                     <th scope="col">email</th>
                     </tr>   
                 </thead>
-              {
-                items.data.map((item) => (
                 <tbody>
-                    <tr>
-                    <td>{ item.first_name }</td>
-                    <td> { item.last_name }</td>
-                    <td> { item.email } </td>
-                    <td>    
-                    <button className="detailButton" onClick={() => Customer}>
-                    <a className="detailLink" href={'/customer/'+  item.id }>Details</a> 
-                    </button>
-                    </td>
+                    {
+                        items.data.map((item) => (
+                            <tr>
+                            <td>{ item.first_name }</td>
+                            <td> { item.last_name }</td>
+                            <td> { item.email } </td>
+                            <td>    
+                            <button className="detailButton" onClick={() => Customer}>
+                            <a className="detailLink" href={'/customer/'+  item.id }>Details</a> 
+                            </button>
+                            </td>
 
-                    </tr>
+                            </tr>
+                        ))
+                    }
                 </tbody>
-                ))
-
-               }
             </table>
         </div>
         </>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 class AllTrips extends React.Component {
    
     constructor(props) {
@@ -39,18 +40,18 @@ class AllTrips extends React.Component {
                     <th scope="col">price</th>
                     </tr>   
                 </thead>
-              {
-                items.data.map((item) => (
                 <tbody>
-                    <tr>
-                    <td>{ item.number_of_days }</td>
-                    <td> { item.departure_date }</td>
-                    <td> { item.price } </td>
-                    </tr>
+                    {
+                        items.data.map((item) => (
+                            <tr>
+                            <td>{ item.number_of_days }</td>
+                            <td> { item.departure_date }</td>
+                            <td> { item.price } </td>
+                            </tr>
+                        ))
+                    }
                 </tbody>
-                ))
 
-               }
             </table>
         </div>
         </>

@@ -41,22 +41,22 @@ class Allcities extends React.Component {
                     
                     </tr>   
                 </thead>
-              {
-                items.data.map((item) => (
                 <tbody>
-                    <tr>
-                    <td> { item.country_code }</td>
-                    <td> { item.description }</td>
-                    <td>    
-                    <button onClick={() => CityTrips}>
-                    <a href={'/city/'+  item.id + '/trips/'}>Details</a> 
-                    </button>
-                    </td>
-                    </tr>
-                </tbody>
-                ))
+                    {
+                        items.data.map((item) => (
+                            <tr>
+                            <td> { item.country_code }</td>
+                            <td> { item.description }</td>
+                            <td>    
+                            <button onClick={() => CityTrips}>
+                            <a href={'/city/'+  item.id + '/trips/'}>Details</a> 
+                            </button>
+                            </td>
+                            </tr>
+                        ))
 
-               }
+                    }
+                </tbody>
             </table>
         </div>
         </>

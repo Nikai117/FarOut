@@ -32,14 +32,14 @@ export default function App() {
                 Customer-Register
               </a>
             </li>
-            <li className="nav-item">
+            {/*      <li className="nav-item">
               <a className="nav-link" href="http://localhost:3000/tripsform">
                 TripsForm
               </a>
-            </li>
-            <li class="nav-item dropdown">
+            </li> */}
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -47,7 +47,7 @@ export default function App() {
               >
                 All
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
+              <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
                   <a
                     className="dropdown-item"
@@ -73,13 +73,6 @@ export default function App() {
                   </a>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="http://localhost:3000/login">
-                Login
-              </a>
             </li>
           </ul>
         </div>
