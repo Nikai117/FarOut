@@ -1,5 +1,6 @@
 import React from "react";
 import CityTrips from "./CityTrips";
+import "./css/AllCustomers.css";
 
 
 class Allcities extends React.Component {
@@ -48,8 +49,8 @@ class Allcities extends React.Component {
                             <td> { item.country_code }</td>
                             <td> { item.description }</td>
                             <td>    
-                            <button onClick={() => CityTrips}>
-                            <a href={'/city/'+  item.id + '/trips/'}>Details</a> 
+                            <button className="detailButton"  onClick={() => CityTrips}>
+                            <a  className="detailLink" href={'/city/'+  item.id + '/trips/'}>Details</a> 
                             </button>
                             </td>
                             </tr>

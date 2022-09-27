@@ -75,6 +75,13 @@ export default function App() {
               </ul>
             </li>
           </ul>
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/login">
+                Login
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
       <AppRouter />

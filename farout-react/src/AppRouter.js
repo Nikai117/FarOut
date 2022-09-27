@@ -8,7 +8,7 @@ import Customer from "./Pages/Customer";
 import CityTrips from "./Pages/CityTrips";
 import Allcities from "./Pages/Allcities";
 import AllTrips from "./Pages/Alltrips";
-
+import Login from "./Pages/Login";
 import "./App.css";
 export default function AppRouter() {
   return (
@@ -26,6 +26,7 @@ export default function AppRouter() {
             <Route path="/city/:id/trips" element={<CityTrips />} />
             <Route path="/allcities" element={<Allcities />} />
             <Route path="/alltrips" element={<AllTrips />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>
         <footer
