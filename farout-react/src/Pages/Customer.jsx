@@ -60,11 +60,11 @@ const client = axios.create({
 								reservations.map((reservation) => (
 									<>
 									<ReservationInfo>
-										<h6>Reservatie Datum</h6>
+										<h6>Reservation Date</h6>
 										<div>{ reservation.trip_id }</div>
-										<h6>Aantal Volwassenen</h6>
+										<h6> Number of adults</h6>
 										<div>{ reservation.number_of_adults }</div>
-										<h6>Aantal kinderen</h6>
+										<h6>Number of  children</h6>
 										<div>{ reservation.number_of_childeren}</div>
 										</ReservationInfo>
 										<br/>

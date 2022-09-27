@@ -149,7 +149,7 @@ function CustomerForm() {
                         htmlFor="exampleInputCity"
                         className="form-label d-flex"
                       >
-                        Country *{" "}
+                        Country code *
                       </label>
                       <input
                         type="text"
