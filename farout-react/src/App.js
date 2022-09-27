@@ -28,18 +28,51 @@ export default function App() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="http://localhost:3000/allcustomers">
-                Customers
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="http://localhost:3000/customerform">
                 Customer-Register
               </a>
             </li>
-              <li className="nav-item">
-              <a className="nav-link" href="http://localhost:3000/allcities">
-              Cities</a>
+            {/*      <li className="nav-item">
+              <a className="nav-link" href="http://localhost:3000/tripsform">
+                TripsForm
+              </a>
+            </li> */}
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                All
+              </a>
+              <ul className="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="http://localhost:3000/alltrips"
+                  >
+                    Alltrips
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="http://localhost:3000/allcustomers"
+                  >
+                    Allcustomers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="http://localhost:3000/allcities"
+                  >
+                    Allcities
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
