@@ -40,7 +40,7 @@ export const ReservationInfo = styled.div`
      align-items: center;
      justify-content: center;
      transition: all 0.2s ease-in-out;
-    &:hover {
+     &:hover {
     transform: scale(1.03);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
