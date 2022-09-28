@@ -32,14 +32,14 @@ export const UserInfo = styled.div`
 `;
 
 export const ReservationInfo = styled.div`
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  background: whitesmoke;
-  width: 75vh;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-  &:hover {
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     background: whitesmoke;
+     width: 75vh;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.2s ease-in-out;
+     &:hover {
     transform: scale(1.03);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
