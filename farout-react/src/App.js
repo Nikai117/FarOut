@@ -48,14 +48,14 @@ export default function App() {
                 All
               </a>
               <ul className="dropdown-menu dropdown-menu-dark">
-                <li>
+                {/*      <li>
                   <a
                     className="dropdown-item"
                     href="http://localhost:3000/alltrips"
                   >
                     Alltrips
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     className="dropdown-item"

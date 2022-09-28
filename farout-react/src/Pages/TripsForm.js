@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import axios from "axios";
 import CityList from "../components/MainSection/city-list.js";
 import "./css/form.css";
@@ -112,4 +112,3 @@ function TripsForm() {
 }
 
 export default TripsForm;
- */
